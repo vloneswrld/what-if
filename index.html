@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>What If We Never Met?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Playfair Display', serif;
+      background: linear-gradient(180deg, #000000, #1a1a1a, #fff1f9, #ffeef2, #fdf0ff);
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 50px 20px;
+    }
+
+    h1, h2, p {
+      margin: 20px 0;
+    }
+
+    h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3rem;
+    }
+
+    .heart {
+      font-size: 2rem;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); opacity: 1; }
+      50% { transform: translateY(-20px); opacity: 0.7; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    .fade-in {
+      animation: fadeIn 3s ease-in forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    .timeline {
+      margin-top: 30px;
+      text-align: left;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.2rem;
+      color: #1a1a1a; /* darker for better contrast */
+      background: rgba(255, 192, 203, 0.85); /* transparent light pink */
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+    .timeline p {
+      margin-bottom: 10px;
+    }
+
+    .because-text {
+      color: #2c2c2c; /* dark charcoal for better visibility */
+      background: rgba(255, 255, 255, 0.85); /* translucent white */
+      padding: 30px 20px;
+      border-radius: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.5;
+      box-shadow: 0 0 10px rgba(255, 192, 203, 0.4);
+    }
+
+    .ready-surprise {
+      color: #2c2c2c; /* dark charcoal */
+      background: rgba(255, 255, 255, 0.85); /* translucent white */
+      padding: 30px 20px;
+      border-radius: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+      box-shadow: 0 0 10px rgba(255, 192, 203, 0.4);
+      line-height: 1.5;
+    }
+
+    .btn {
+      margin-top: 30px;
+      padding: 15px 25px;
+      background: pink;
+      border: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 0 10px pink;
+      transition: transform 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .emoji-confetti {
+      font-size: 2rem;
+      animation: pop 0.6s ease infinite alternate;
+    }
+
+    @keyframes pop {
+      from { transform: translateY(0); }
+      to { transform: translateY(-10px); }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Section 1: What If -->
+  <div class="section fade-in">
+    <h1>What if we never met?</h1>
+    <p>I probably wouldn’t smile as much.</p>
+    <p>I wouldn’t know what love at 2am feels like.</p>
+    <p>I wouldn’t have a favorite voice or a favorite name.</p>
+    <div class="heart">❤️</div>
+  </div>
+
+  <!-- Section 2: But We Did -->
+  <div class="section fade-in">
+    <h1>But we did.</h1>
+    <p>And everything changed.</p>
+
+    <div class="timeline">
+      <p>📅 May 6, 2024 – Our first message</p>
+      <p>💞 July 13, 2024 – We got together</p>
+      <p>📱 Our late-night calls started</p>
+      <p>🩷 We got through our first fight</p>
+      <p>💬 You called me your girl</p>
+      <p>🏎️ You made my heart go vroom</p>
+    </div>
+  </div>
+
+  <!-- Section 3: Because of You -->
+  <div class="section fade-in">
+    <h1 style="color: deeppink;">Because of you…</h1>
+    <div class="because-text">
+      <p>I found my person.</p>
+      <p>You make every single day lighter.</p>
+      <p>You remind me that love is real.</p>
+      <p>You’re my always. And my again.</p>
+      <p style="margin-top: 20px; font-size: 1.5rem; color: hotpink;">🫶 One year down. Forever to go, baby.</p>
+    </div>
+  </div>
+
+  <!-- Section 4: Surprise Button -->
+  <div class="section fade-in">
+    <h1 style="color: deeppink;">Ready for a surprise?</h1>
+    <div class="ready-surprise">
+      <button class="btn" onclick="showMessage()">Click here</button>
+
+      <div id="message" style="margin-top: 40px; display: none;">
+        <div class="emoji-confetti">🏎️❤️✨💋</div>
+        <p style="font-size: 1.3rem; margin-top: 20px;">
+          You changed my life, Ameer.<br>
+          You loved me in my worsts, my highs, my quiet days, and my chaos.<br>
+          Thank you for being mine.<br><br>
+          I’ll choose you for every lifetime.
+        </p>
+
+        <h2 style="margin-top: 30px; font-size: 2rem; color: deeppink;">HAPPY 1 YEAR, BABYYY 💕 07.13.24</h2>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById('message').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
